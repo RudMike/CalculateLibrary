@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="56b70e9e-d7c2-4a54-8713-1a192aee4278" name="-Mike-@-MIKE-PC 2019-02-15 16:54:51" runUser="-Mike-PC\-Mike-" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Локальные" id="f4a8d79e-937c-4c68-ac87-abb60a94e64a">
+    <Description>Это - параметры по умолчанию для локального тестового запуска.</Description>
+    <Deployment runDeploymentRoot="-Mike-_-MIKE-PC 2019-02-15 16_54_51">
+      <DeploymentItem filename="C:\Users\-Mike-\Documents\CalculateProject\CalculateLibrary\CalculateLibrary\CalculateLibrary\bin\Debug\CalculateLibrary.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific>
+        <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+          <AssemblyResolution>
+            <TestDirectory useLoadContext="true" />
+          </AssemblyResolution>
+        </UnitTestRunConfig>
+        <WebTestRunConfiguration testTypeId="4e7599fa-5ecb-43e9-a887-cd63cf72d207">
+          <Browser name="Internet Explorer 7.0">
+            <Headers>
+              <Header name="User-Agent" value="Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)" />
+              <Header name="Accept" value="*/*" />
+              <Header name="Accept-Language" value="{{$IEAcceptLanguage}}" />
+              <Header name="Accept-Encoding" value="GZIP" />
+            </Headers>
+          </Browser>
+        </WebTestRunConfiguration>
+      </TestTypeSpecific>
+      <AgentRule name="LocalMachineDefaultRole">
+        <DataCollectors>
+          <DataCollector uri="datacollector://microsoft/CodeCoverage/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.CodeCoverage.CoveragePlugIn, Microsoft.VisualStudio.QualityTools.Plugins.CodeCoverage, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Покрытие кода">
+            <Configuration>
+              <CodeCoverage xmlns="">
+                <Regular>
+                  <CodeCoverageItem binaryFile="C:\Users\-Mike-\Documents\CalculateProject\CalculateLibrary\CalculateLibrary\CalculateLibrary\bin\Debug\CalculateLibrary.dll" pdbFile="C:\Users\-Mike-\Documents\CalculateProject\CalculateLibrary\CalculateLibrary\CalculateLibrary\bin\Debug\CalculateLibrary.instr.pdb" instrumentInPlace="true" />
+                </Regular>
+              </CodeCoverage>
+            </Configuration>
+          </DataCollector>
+        </DataCollectors>
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2019-02-15T16:54:51.6124898+03:00" queuing="2019-02-15T16:54:52.3665329+03:00" start="2019-02-15T16:54:52.4895399+03:00" finish="2019-02-15T16:54:56.4357657+03:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="16" executed="16" passed="16" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <ResultFiles>
+      <ResultFile path="-MIKE-PC\data.coverage" />
+    </ResultFiles>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="DoExpressionFormatCorrect_ExpressionWithSpacesAndTabulation_Success" storage="c:\users\-mike-\documents\calculateproject\calculatelibrary\calculatelibrary\calculatelibrarytests\bin\debug\calculatelibrarytests.dll" id="013bf6fb-8634-ee95-5cf8-168475212276">
+      <Execution id="5e694a4d-14ed-405f-a728-e07e9d74e918" />
+      <TestMethod codeBase="C:/Users/-Mike-/Documents/CalculateProject/CalculateLibrary/CalculateLibrary/CalculateLibraryTests/bin/Debug/CalculateLibraryTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CalculateLibraryUnitTests.CalculateLibraryUnitTests, CalculateLibraryTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DoExpressionFormatCorrect_ExpressionWithSpacesAndTabulation_Success" />
+    </UnitTest>
+    <UnitTest name="DoExpressionFormatCorrect_ExpressionWithCommas_Success" storage="c:\users\-mike-\documents\calculateproject\calculatelibrary\calculatelibrary\calculatelibrarytests\bin\debug\calculatelibrarytests.dll" id="deb192d4-32f8-3310-25ba-9b0a9e456651">
+      <Execution id="25b1d549-3ec9-4e36-8d09-bddc0b117e9d" />
+      <TestMethod codeBase="C:/Users/-Mike-/Documents/CalculateProject/CalculateLibrary/CalculateLibrary/CalculateLibraryTests/bin/Debug/CalculateLibraryTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CalculateLibraryUnitTests.CalculateLibraryUnitTests, CalculateLibraryTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DoExpressionFormatCorrect_ExpressionWithCommas_Success" />
+    </UnitTest>
+    <UnitTest name="DoExpressionFormatCorrect_NoOperatorNearlyLowPriorityOperand_Success" storage="c:\users\-mike-\documents\calculateproject\calculatelibrary\calculatelibrary\calculatelibrarytests\bin\debug\calculatelibrarytests.dll" id="67716bbb-1791-c23d-fb77-dc7d79b1b8af">
+      <Execution id="2dcdecdf-3c21-4956-bb43-8e544736ee79" />
+      <TestMethod codeBase="C:/Users/-Mike-/Documents/CalculateProject/CalculateLibrary/CalculateLibrary/CalculateLibraryTests/bin/Debug/CalculateLibraryTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CalculateLibraryUnitTests.CalculateLibraryUnitTests, CalculateLibraryTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DoExpressionFormatCorrect_NoOperatorNearlyLowPriorityOperand_Success" />
+    </UnitTest>
+    <UnitTest name="DoExpressionFormatCorrect_NoMultiplyNearlyVariables_Success" storage="c:\users\-mike-\documents\calculateproject\calculatelibrary\calculatelibrary\calculatelibrarytests\bin\debug\calculatelibrarytests.dll" id="dba19b5d-2d3c-f799-5b65-02dd003a7f4d">
+      <Execution id="f58bfaf0-283c-41c4-8836-c713f191f5f2" />
+      <TestMethod codeBase="C:/Users/-Mike-/Documents/CalculateProject/CalculateLibrary/CalculateLibrary/CalculateLibraryTests/bin/Debug/CalculateLibraryTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CalculateLibraryUnitTests.CalculateLibraryUnitTests, CalculateLibraryTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DoExpressionFormatCorrect_NoMultiplyNearlyVariables_Success" />
+    </UnitTest>
+    <UnitTest name="CalculateExpressionWithoutVariables_EmptyExpression_Fail" storage="c:\users\-mike-\documents\calculateproject\calculatelibrary\calculatelibrary\calculatelibrarytests\bin\debug\calculatelibrarytests.dll" id="06ad4ddb-fa9c-6a42-f069-3d96706b3906">
+      <Execution id="10258581-9c26-410a-81d3-534248ea8de8" />
+      <TestMethod codeBase="C:/Users/-Mike-/Documents/CalculateProject/CalculateLibrary/CalculateLibrary/CalculateLibraryTests/bin/Debug/CalculateLibraryTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CalculateLibraryUnitTests.CalculateLibraryUnitTests, CalculateLibraryTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CalculateExpressionWithoutVariables_EmptyExpression_Fail" />
+    </UnitTest>
+    <UnitTest name="CalculateExpressionWithVariables_NotFullVariablesDeclaration_Fail" storage="c:\users\-mike-\documents\calculateproject\calculatelibrary\calculatelibrary\calculatelibrarytests\bin\debug\calculatelibrarytests.dll" id="386731a7-76ec-e8a9-0f6d-f4dd5047f486">
+      <Execution id="4a1e4535-781a-4ea5-b235-8ac311c9cb2d" />
+      <TestMethod codeBase="C:/Users/-Mike-/Documents/CalculateProject/CalculateLibrary/CalculateLibrary/CalculateLibraryTests/bin/Debug/CalculateLibraryTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CalculateLibraryUnitTests.CalculateLibraryUnitTests, CalculateLibraryTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CalculateExpressionWithVariables_NotFullVariablesDeclaration_Fail" />
+    </UnitTest>
+    <UnitTest name="DoExpressionFormatCorrect_NoMultiplyNearlyQuotes_Success" storage="c:\users\-mike-\documents\calculateproject\calculatelibrary\calculatelibrary\calculatelibrarytests\bin\debug\calculatelibrarytests.dll" id="cee5d898-287b-869f-65be-3de82d4d27e4">
+      <Execution id="26973ca4-6fb0-42fb-87a0-358ec20733c6" />
+      <TestMethod codeBase="C:/Users/-Mike-/Documents/CalculateProject/CalculateLibrary/CalculateLibrary/CalculateLibraryTests/bin/Debug/CalculateLibraryTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CalculateLibraryUnitTests.CalculateLibraryUnitTests, CalculateLibraryTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DoExpressionFormatCorrect_NoMultiplyNearlyQuotes_Success" />
+    </UnitTest>
+    <UnitTest name="CalculateExpressionWithoutVariables_UsingVariables_Fail" storage="c:\users\-mike-\documents\calculateproject\calculatelibrary\calculatelibrary\calculatelibrarytests\bin\debug\calculatelibrarytests.dll" id="a67e85c5-0208-9a9a-067b-0c75aa1bfd42">
+      <Execution id="1baac4f2-1eda-40fd-9932-477d7207ff14" />
+      <TestMethod codeBase="C:/Users/-Mike-/Documents/CalculateProject/CalculateLibrary/CalculateLibrary/CalculateLibraryTests/bin/Debug/CalculateLibraryTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CalculateLibraryUnitTests.CalculateLibraryUnitTests, CalculateLibraryTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CalculateExpressionWithoutVariables_UsingVariables_Fail" />
+    </UnitTest>
+    <UnitTest name="DoExpressionFormatCorrect_IncorrectQuotes_Fail" storage="c:\users\-mike-\documents\calculateproject\calculatelibrary\calculatelibrary\calculatelibrarytests\bin\debug\calculatelibrarytests.dll" id="7c29f708-0bca-cde7-d8e2-02c970d9ae06">
+      <Execution id="5ecdbf6a-625e-47af-9350-d137f1836300" />
+      <TestMethod codeBase="C:/Users/-Mike-/Documents/CalculateProject/CalculateLibrary/CalculateLibrary/CalculateLibraryTests/bin/Debug/CalculateLibraryTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CalculateLibraryUnitTests.CalculateLibraryUnitTests, CalculateLibraryTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DoExpressionFormatCorrect_IncorrectQuotes_Fail" />
+    </UnitTest>
+    <UnitTest name="CalculateExpressionWithoutVariables_CorrectnessOfCalculations_Success" storage="c:\users\-mike-\documents\calculateproject\calculatelibrary\calculatelibrary\calculatelibrarytests\bin\debug\calculatelibrarytests.dll" id="f854cfe7-6c5f-292b-d7e0-273d54a80870">
+      <Execution id="106611cf-ca1c-40a3-8c46-02ffad60bbbe" />
+      <TestMethod codeBase="C:/Users/-Mike-/Documents/CalculateProject/CalculateLibrary/CalculateLibrary/CalculateLibraryTests/bin/Debug/CalculateLibraryTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CalculateLibraryUnitTests.CalculateLibraryUnitTests, CalculateLibraryTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CalculateExpressionWithoutVariables_CorrectnessOfCalculations_Success" />
+    </UnitTest>
+    <UnitTest name="DoExpressionFormatCorrect_NoMultiplyBetweenVariableAndOperand_Success" storage="c:\users\-mike-\documents\calculateproject\calculatelibrary\calculatelibrary\calculatelibrarytests\bin\debug\calculatelibrarytests.dll" id="fc931fa4-4117-7886-c170-b53326fe8a5f">
+      <Execution id="83fd6ca3-988a-4c0c-b050-6a38330551e2" />
+      <TestMethod codeBase="C:/Users/-Mike-/Documents/CalculateProject/CalculateLibrary/CalculateLibrary/CalculateLibraryTests/bin/Debug/CalculateLibraryTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CalculateLibraryUnitTests.CalculateLibraryUnitTests, CalculateLibraryTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DoExpressionFormatCorrect_NoMultiplyBetweenVariableAndOperand_Success" />
+    </UnitTest>
+    <UnitTest name="DoExpressionFormatCorrect_IncorrectBorderOperators_Fail" storage="c:\users\-mike-\documents\calculateproject\calculatelibrary\calculatelibrary\calculatelibrarytests\bin\debug\calculatelibrarytests.dll" id="cfde2895-d9a8-7dd8-2e4f-d57143cd3a40">
+      <Execution id="9faa8ea2-0135-4950-80a8-1abd3a781616" />
+      <TestMethod codeBase="C:/Users/-Mike-/Documents/CalculateProject/CalculateLibrary/CalculateLibrary/CalculateLibraryTests/bin/Debug/CalculateLibraryTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CalculateLibraryUnitTests.CalculateLibraryUnitTests, CalculateLibraryTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DoExpressionFormatCorrect_IncorrectBorderOperators_Fail" />
+    </UnitTest>
+    <UnitTest name="CalculateExpressionWithVariables_EmptyExpression_Fail" storage="c:\users\-mike-\documents\calculateproject\calculatelibrary\calculatelibrary\calculatelibrarytests\bin\debug\calculatelibrarytests.dll" id="66d3f8b2-b686-a02c-bc6f-7b9f64ec6241">
+      <Execution id="24336d97-3bee-4fe4-ab2a-4a3e754ae64e" />
+      <TestMethod codeBase="C:/Users/-Mike-/Documents/CalculateProject/CalculateLibrary/CalculateLibrary/CalculateLibraryTests/bin/Debug/CalculateLibraryTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CalculateLibraryUnitTests.CalculateLibraryUnitTests, CalculateLibraryTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CalculateExpressionWithVariables_EmptyExpression_Fail" />
+    </UnitTest>
+    <UnitTest name="CalculateExpressionWithVariables_CorrectnessOfCalculations_Success" storage="c:\users\-mike-\documents\calculateproject\calculatelibrary\calculatelibrary\calculatelibrarytests\bin\debug\calculatelibrarytests.dll" id="99e47294-5a26-304f-71cb-ae2fbeef7d9e">
+      <Execution id="1580fb57-7d0b-490c-9645-1dce419fa634" />
+      <TestMethod codeBase="C:/Users/-Mike-/Documents/CalculateProject/CalculateLibrary/CalculateLibrary/CalculateLibraryTests/bin/Debug/CalculateLibraryTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CalculateLibraryUnitTests.CalculateLibraryUnitTests, CalculateLibraryTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CalculateExpressionWithVariables_CorrectnessOfCalculations_Success" />
+    </UnitTest>
+    <UnitTest name="DoExpressionFormatCorrect_IncorrectOperatorsNearlyQuote_Fail" storage="c:\users\-mike-\documents\calculateproject\calculatelibrary\calculatelibrary\calculatelibrarytests\bin\debug\calculatelibrarytests.dll" id="b6cbde23-094f-013d-f83d-13ba029be86b">
+      <Execution id="1eb59c10-2a6e-4d6c-a0c8-7d178253f935" />
+      <TestMethod codeBase="C:/Users/-Mike-/Documents/CalculateProject/CalculateLibrary/CalculateLibrary/CalculateLibraryTests/bin/Debug/CalculateLibraryTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CalculateLibraryUnitTests.CalculateLibraryUnitTests, CalculateLibraryTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DoExpressionFormatCorrect_IncorrectOperatorsNearlyQuote_Fail" />
+    </UnitTest>
+    <UnitTest name="Calculating_DividedByZero_Fail" storage="c:\users\-mike-\documents\calculateproject\calculatelibrary\calculatelibrary\calculatelibrarytests\bin\debug\calculatelibrarytests.dll" id="d1ad1b5e-33d5-b1ca-a446-385fef22ba9f">
+      <Execution id="7cdf0b96-ba5f-492f-af7c-b1c9a08756bb" />
+      <TestMethod codeBase="C:/Users/-Mike-/Documents/CalculateProject/CalculateLibrary/CalculateLibrary/CalculateLibraryTests/bin/Debug/CalculateLibraryTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CalculateLibraryUnitTests.CalculateLibraryUnitTests, CalculateLibraryTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Calculating_DividedByZero_Fail" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Отсутствующие в списке результаты" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Все загруженные результаты" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="013bf6fb-8634-ee95-5cf8-168475212276" executionId="5e694a4d-14ed-405f-a728-e07e9d74e918" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="06ad4ddb-fa9c-6a42-f069-3d96706b3906" executionId="10258581-9c26-410a-81d3-534248ea8de8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="386731a7-76ec-e8a9-0f6d-f4dd5047f486" executionId="4a1e4535-781a-4ea5-b235-8ac311c9cb2d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="66d3f8b2-b686-a02c-bc6f-7b9f64ec6241" executionId="24336d97-3bee-4fe4-ab2a-4a3e754ae64e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="67716bbb-1791-c23d-fb77-dc7d79b1b8af" executionId="2dcdecdf-3c21-4956-bb43-8e544736ee79" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7c29f708-0bca-cde7-d8e2-02c970d9ae06" executionId="5ecdbf6a-625e-47af-9350-d137f1836300" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="99e47294-5a26-304f-71cb-ae2fbeef7d9e" executionId="1580fb57-7d0b-490c-9645-1dce419fa634" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a67e85c5-0208-9a9a-067b-0c75aa1bfd42" executionId="1baac4f2-1eda-40fd-9932-477d7207ff14" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b6cbde23-094f-013d-f83d-13ba029be86b" executionId="1eb59c10-2a6e-4d6c-a0c8-7d178253f935" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cee5d898-287b-869f-65be-3de82d4d27e4" executionId="26973ca4-6fb0-42fb-87a0-358ec20733c6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cfde2895-d9a8-7dd8-2e4f-d57143cd3a40" executionId="9faa8ea2-0135-4950-80a8-1abd3a781616" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d1ad1b5e-33d5-b1ca-a446-385fef22ba9f" executionId="7cdf0b96-ba5f-492f-af7c-b1c9a08756bb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dba19b5d-2d3c-f799-5b65-02dd003a7f4d" executionId="f58bfaf0-283c-41c4-8836-c713f191f5f2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="deb192d4-32f8-3310-25ba-9b0a9e456651" executionId="25b1d549-3ec9-4e36-8d09-bddc0b117e9d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f854cfe7-6c5f-292b-d7e0-273d54a80870" executionId="106611cf-ca1c-40a3-8c46-02ffad60bbbe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fc931fa4-4117-7886-c170-b53326fe8a5f" executionId="83fd6ca3-988a-4c0c-b050-6a38330551e2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="5e694a4d-14ed-405f-a728-e07e9d74e918" testId="013bf6fb-8634-ee95-5cf8-168475212276" testName="DoExpressionFormatCorrect_ExpressionWithSpacesAndTabulation_Success" computerName="-MIKE-PC" duration="00:00:00.0682625" startTime="2019-02-15T16:54:53.9816253+03:00" endTime="2019-02-15T16:54:54.5446575+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5e694a4d-14ed-405f-a728-e07e9d74e918">
+    </UnitTestResult>
+    <UnitTestResult executionId="10258581-9c26-410a-81d3-534248ea8de8" testId="06ad4ddb-fa9c-6a42-f069-3d96706b3906" testName="CalculateExpressionWithoutVariables_EmptyExpression_Fail" computerName="-MIKE-PC" duration="00:00:00.0004974" startTime="2019-02-15T16:54:54.5476577+03:00" endTime="2019-02-15T16:54:54.5526579+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="10258581-9c26-410a-81d3-534248ea8de8">
+    </UnitTestResult>
+    <UnitTestResult executionId="4a1e4535-781a-4ea5-b235-8ac311c9cb2d" testId="386731a7-76ec-e8a9-0f6d-f4dd5047f486" testName="CalculateExpressionWithVariables_NotFullVariablesDeclaration_Fail" computerName="-MIKE-PC" duration="00:00:00.0119685" startTime="2019-02-15T16:54:54.5546581+03:00" endTime="2019-02-15T16:54:54.5706590+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4a1e4535-781a-4ea5-b235-8ac311c9cb2d">
+    </UnitTestResult>
+    <UnitTestResult executionId="24336d97-3bee-4fe4-ab2a-4a3e754ae64e" testId="66d3f8b2-b686-a02c-bc6f-7b9f64ec6241" testName="CalculateExpressionWithVariables_EmptyExpression_Fail" computerName="-MIKE-PC" duration="00:00:00.0005751" startTime="2019-02-15T16:54:54.5726591+03:00" endTime="2019-02-15T16:54:54.5776594+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="24336d97-3bee-4fe4-ab2a-4a3e754ae64e">
+    </UnitTestResult>
+    <UnitTestResult executionId="2dcdecdf-3c21-4956-bb43-8e544736ee79" testId="67716bbb-1791-c23d-fb77-dc7d79b1b8af" testName="DoExpressionFormatCorrect_NoOperatorNearlyLowPriorityOperand_Success" computerName="-MIKE-PC" duration="00:00:00.0004683" startTime="2019-02-15T16:54:54.5796595+03:00" endTime="2019-02-15T16:54:54.5836597+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2dcdecdf-3c21-4956-bb43-8e544736ee79">
+    </UnitTestResult>
+    <UnitTestResult executionId="5ecdbf6a-625e-47af-9350-d137f1836300" testId="7c29f708-0bca-cde7-d8e2-02c970d9ae06" testName="DoExpressionFormatCorrect_IncorrectQuotes_Fail" computerName="-MIKE-PC" duration="00:00:00.0008225" startTime="2019-02-15T16:54:54.5866599+03:00" endTime="2019-02-15T16:54:54.5916602+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5ecdbf6a-625e-47af-9350-d137f1836300">
+    </UnitTestResult>
+    <UnitTestResult executionId="1580fb57-7d0b-490c-9645-1dce419fa634" testId="99e47294-5a26-304f-71cb-ae2fbeef7d9e" testName="CalculateExpressionWithVariables_CorrectnessOfCalculations_Success" computerName="-MIKE-PC" duration="00:00:00.0011879" startTime="2019-02-15T16:54:54.5936603+03:00" endTime="2019-02-15T16:54:54.5986606+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1580fb57-7d0b-490c-9645-1dce419fa634">
+    </UnitTestResult>
+    <UnitTestResult executionId="1baac4f2-1eda-40fd-9932-477d7207ff14" testId="a67e85c5-0208-9a9a-067b-0c75aa1bfd42" testName="CalculateExpressionWithoutVariables_UsingVariables_Fail" computerName="-MIKE-PC" duration="00:00:00.0006077" startTime="2019-02-15T16:54:54.6006607+03:00" endTime="2019-02-15T16:54:54.6046609+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1baac4f2-1eda-40fd-9932-477d7207ff14">
+    </UnitTestResult>
+    <UnitTestResult executionId="1eb59c10-2a6e-4d6c-a0c8-7d178253f935" testId="b6cbde23-094f-013d-f83d-13ba029be86b" testName="DoExpressionFormatCorrect_IncorrectOperatorsNearlyQuote_Fail" computerName="-MIKE-PC" duration="00:00:00.0005774" startTime="2019-02-15T16:54:54.6076611+03:00" endTime="2019-02-15T16:54:54.6126614+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1eb59c10-2a6e-4d6c-a0c8-7d178253f935">
+    </UnitTestResult>
+    <UnitTestResult executionId="26973ca4-6fb0-42fb-87a0-358ec20733c6" testId="cee5d898-287b-869f-65be-3de82d4d27e4" testName="DoExpressionFormatCorrect_NoMultiplyNearlyQuotes_Success" computerName="-MIKE-PC" duration="00:00:00.0004171" startTime="2019-02-15T16:54:54.6146615+03:00" endTime="2019-02-15T16:54:54.6186617+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="26973ca4-6fb0-42fb-87a0-358ec20733c6">
+    </UnitTestResult>
+    <UnitTestResult executionId="9faa8ea2-0135-4950-80a8-1abd3a781616" testId="cfde2895-d9a8-7dd8-2e4f-d57143cd3a40" testName="DoExpressionFormatCorrect_IncorrectBorderOperators_Fail" computerName="-MIKE-PC" duration="00:00:00.0005685" startTime="2019-02-15T16:54:54.6196618+03:00" endTime="2019-02-15T16:54:54.6236620+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9faa8ea2-0135-4950-80a8-1abd3a781616">
+    </UnitTestResult>
+    <UnitTestResult executionId="7cdf0b96-ba5f-492f-af7c-b1c9a08756bb" testId="d1ad1b5e-33d5-b1ca-a446-385fef22ba9f" testName="Calculating_DividedByZero_Fail" computerName="-MIKE-PC" duration="00:00:00.0004997" startTime="2019-02-15T16:54:54.6276622+03:00" endTime="2019-02-15T16:54:54.6326625+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7cdf0b96-ba5f-492f-af7c-b1c9a08756bb">
+    </UnitTestResult>
+    <UnitTestResult executionId="f58bfaf0-283c-41c4-8836-c713f191f5f2" testId="dba19b5d-2d3c-f799-5b65-02dd003a7f4d" testName="DoExpressionFormatCorrect_NoMultiplyNearlyVariables_Success" computerName="-MIKE-PC" duration="00:00:00.0004306" startTime="2019-02-15T16:54:54.6346626+03:00" endTime="2019-02-15T16:54:54.6386629+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f58bfaf0-283c-41c4-8836-c713f191f5f2">
+    </UnitTestResult>
+    <UnitTestResult executionId="25b1d549-3ec9-4e36-8d09-bddc0b117e9d" testId="deb192d4-32f8-3310-25ba-9b0a9e456651" testName="DoExpressionFormatCorrect_ExpressionWithCommas_Success" computerName="-MIKE-PC" duration="00:00:00.0004230" startTime="2019-02-15T16:54:54.6406630+03:00" endTime="2019-02-15T16:54:54.6446632+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="25b1d549-3ec9-4e36-8d09-bddc0b117e9d">
+    </UnitTestResult>
+    <UnitTestResult executionId="106611cf-ca1c-40a3-8c46-02ffad60bbbe" testId="f854cfe7-6c5f-292b-d7e0-273d54a80870" testName="CalculateExpressionWithoutVariables_CorrectnessOfCalculations_Success" computerName="-MIKE-PC" duration="00:00:00.0007756" startTime="2019-02-15T16:54:54.6476634+03:00" endTime="2019-02-15T16:54:54.6526637+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="106611cf-ca1c-40a3-8c46-02ffad60bbbe">
+    </UnitTestResult>
+    <UnitTestResult executionId="83fd6ca3-988a-4c0c-b050-6a38330551e2" testId="fc931fa4-4117-7886-c170-b53326fe8a5f" testName="DoExpressionFormatCorrect_NoMultiplyBetweenVariableAndOperand_Success" computerName="-MIKE-PC" duration="00:00:00.0004344" startTime="2019-02-15T16:54:54.6546638+03:00" endTime="2019-02-15T16:54:54.6596641+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="83fd6ca3-988a-4c0c-b050-6a38330551e2">
+    </UnitTestResult>
+  </Results>
+</TestRun>

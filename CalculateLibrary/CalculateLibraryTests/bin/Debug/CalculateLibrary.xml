@@ -1,0 +1,314 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CalculateLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:CalculateLibrary.ICalculate">
+            <summary>
+            Interface of dll-library.
+            </summary>
+        </member>
+        <member name="M:CalculateLibrary.ICalculate.CalculateExpression(System.String,System.Collections.Generic.Dictionary{System.Char,System.Double})">
+            <summary>
+            Calculates string, which contains mathematical expression with variables.
+            </summary>
+            <param name="expression">Input expression.</param>
+            <param name="variables">Dictionary which contains variables and value of it.</param>
+            <returns>Returns result of expression calculate.</returns>
+        </member>
+        <member name="M:CalculateLibrary.ICalculate.CalculateExpression(System.String)">
+            <summary>
+            Calculates string, which contains mathematical expression without variables.
+            </summary>
+            <param name="expression">Input expression.</param>
+            <returns>Returns result of expression calculate.</returns>
+        </member>
+        <member name="T:CalculateLibrary.Calculate">
+            <summary>
+            Main class of program.
+            </summary>
+        </member>
+        <member name="M:CalculateLibrary.Calculate.CalculateExpression(System.String)">
+            <summary>
+            Calculates string, which contains mathematical expression without variables.
+            </summary>
+            <param name="expression">Input expression. </param>
+            <exception cref="T:CalculateLibrary.VariablesException">Exception VariablesException when trying to send into this method expression with variables.</exception>
+            <exception cref="T:CalculateLibrary.QuotesCountException">Exception QuotesCountException with the incorrect count of opening/closing quotes.</exception>
+            <exception cref="T:System.DivideByZeroException">Exception DivideByZeroException when trying to divide by zero.</exception>
+            <exception cref="T:CalculateLibrary.CalculateException">Exception CalculateException when input expression is incorrect.</exception>
+            <exception cref="T:System.ArgumentNullException">Exception ArgumentNullException when input expression is empty.</exception>
+            <returns>Returns result of expression calculate.</returns>
+        </member>
+        <member name="M:CalculateLibrary.Calculate.CalculateExpression(System.String,System.Collections.Generic.Dictionary{System.Char,System.Double})">
+            <summary>
+            Calculates string, which contains mathematical expression with variables.
+            </summary>
+            <param name="expression">Input expression.</param>
+            <param name="variables">Dictionary which contains variables and value of it.</param>
+            <exception cref="T:CalculateLibrary.QuotesCountException">Exception QuotesCountException with the incorrect count of opening/closing quotes.</exception>
+            <exception cref="T:System.DivideByZeroException">Exception DivideByZeroException when trying to divide by zero.</exception>
+            <exception cref="T:CalculateLibrary.CalculateException">Exception CalculateException when input expression is incorrect.</exception>
+            <exception cref="T:System.ArgumentNullException">Exception ArgumentNullException when input expression is empty.</exception>
+            <returns>Returns result of expression calculate.</returns>
+        </member>
+        <member name="M:CalculateLibrary.Calculate.DoExpressionFormatCorrect(System.String)">
+            <summary>
+            Method for checking input string on correct and trying to do it correct
+            (delete tabulation symbols, line transfer, put symbol "*" and "+" where necessary, check quotes correct).
+            </summary>
+            <param name="expression">Expression, given to the correct form.</param>
+            <returns>Returns expression to the correct form.</returns>
+        </member>
+        <member name="M:CalculateLibrary.Calculate.IsCorrectQuotes(System.String)">
+            <summary>
+            Method for checking if correctly quotes position.
+            </summary>
+            <param name="expression">String for checking.</param>
+            <returns>Returns "true" if quotes position is correct, otherwise "false".</returns>
+        </member>
+        <member name="M:CalculateLibrary.Calculate.IsVariable(System.Char)">
+            <summary>
+            Method for determine, is the symbol is letter.
+            </summary>
+            <param name="checkSymbol">Check symbol.</param>
+            <returns>Returns "true" if the symbol is letter, otherwise "false".</returns>
+        </member>
+        <member name="M:CalculateLibrary.Calculate.IsNumber(System.Char)">
+            <summary>
+            Method for determine, is the symbol is number.
+            </summary>
+            <param name="checkSymbol">Check symbol.</param>
+            <returns>Returns "true" if the symbol is number, otherwise "false".</returns>
+        </member>
+        <member name="M:CalculateLibrary.Calculate.IsVariableOrNumber(System.Char)">
+            <summary>
+            Method for determine, is the symbol is letter or is number.
+            </summary>
+            <param name="checkSymbol">Check symbol.</param>
+            <returns>Returns "true" if the symbol is letter or number, otherwise "false".</returns>
+        </member>
+        <member name="M:CalculateLibrary.Calculate.IsOpeningQuote(System.Char)">
+            <summary>
+            Method for determine, is the symbol is opening quote.
+            </summary>
+            <param name="checkSymbol">Check symbol.</param>
+            <returns>Returns "true" if the symbol is opening quote, otherwise "false".</returns>
+        </member>
+        <member name="M:CalculateLibrary.Calculate.IsOpeningQuote(System.String)">
+            <summary>
+            Method for determine, is the symbol is opening quote.
+            </summary>
+            <param name="checkSymbol">Check symbol.</param>
+            <returns>Returns "true" if the symbol is opening quote, otherwise "false".</returns>
+        </member>
+        <member name="M:CalculateLibrary.Calculate.IsClosingQuote(System.Char)">
+            <summary>
+            Method for determine, is the symbol is closing quote.
+            </summary>
+            <param name="checkSymbol">Check symbol.</param>
+            <returns>Returns "true" if the symbol is closing quote, otherwise "false".</returns>
+        </member>
+        <member name="M:CalculateLibrary.Calculate.IsClosingQuote(System.String)">
+            <summary>
+            Method for determine, is the symbol is closing quote.
+            </summary>
+            <param name="checkSymbol">Check symbol.</param>
+            <returns>Returns "true" if the symbol is closing quote, otherwise "false".</returns>
+        </member>
+        <member name="M:CalculateLibrary.Calculate.IsOperator(System.Char)">
+            <summary>
+            Method for determine, is the symbol is operator (+-*/).
+            </summary>
+            <param name="checkSymbol">Check symbol.</param>
+            <returns>Returns "true" if the symbol is operator, otherwise "false".</returns>
+        </member>
+        <member name="M:CalculateLibrary.Calculate.IsLowPriorityOperator(System.Char)">
+            <summary>
+            Method for determine, is the symbol is low priority operator (+-).
+            </summary>
+            <param name="checkOperator">Check symbol.</param>
+            <returns>Returns "true" if the symbol is low priority operator, otherwise "false".</returns>
+        </member>
+        <member name="M:CalculateLibrary.Calculate.IsHighPriorityOperator(System.Char)">
+            <summary>
+            Method for determine, is the symbol is high priority operator (*/).
+            </summary>
+            <param name="checkOperator">Check symbol.</param>
+            <returns>Returns "true" if the symbol is low priority operator, otherwise "false".</returns>
+        </member>
+        <member name="M:CalculateLibrary.Calculate.IsPoint(System.Char)">
+            <summary>
+            Method for determine, is the symbol is point (.).
+            </summary>
+            <param name="checkOperator">Check symbol.</param>
+            <returns>Returns "true" if the symbol is point, otherwise "false".</returns>
+        </member>
+        <member name="M:CalculateLibrary.Calculate.GetPriorityOperator(System.Char)">
+            <summary>
+            Method for getting operator priority.
+            </summary>
+            <param name="checkOperator">Checked operator.</param>
+            <returns>Returns operator priority: "0" if operator is "()", "1" if operator is "+-", "2" if operator is "*/", "-1" if operator is unknown.</returns>
+        </member>
+        <member name="M:CalculateLibrary.Calculate.GetPriorityOperator(System.String)">
+            <summary>
+            Method for getting operator priority.
+            </summary>
+            <param name="checkOperator">Checked operator.</param>
+            <returns>Returns operator priority: "0" if operator is "()", "1" if operator is "+-", "2" if operator is "*/", "-1" if operator is unknown.</returns>
+        </member>
+        <member name="M:CalculateLibrary.Calculate.IsCorrectFirstExpressionSymbol(System.String)">
+            <summary>
+            Method for checking input string on correct first symbol.
+            </summary>
+            <param name="expression">Input math expression.</param>
+            <returns>Returns true if first symbol of math expression is correct.</returns>
+        </member>
+        <member name="M:CalculateLibrary.Calculate.IsCorrectLastExpressionSymbol(System.String)">
+            <summary>
+            Method for checking input string on correct last symbol.
+            </summary>
+            <param name="expression">Input math expression.</param>
+            <returns>Returns true if last symbol of math expression is correct.</returns>
+        </member>
+        <member name="M:CalculateLibrary.Calculate.Calculating(System.String)">
+            <summary>
+            Calculates the expression.
+            </summary>
+            <param name="expression">Input expression.</param>
+            <returns>Returns result of calculated.</returns>
+        </member>
+        <member name="T:CalculateLibrary.QuotesCountException">
+            <summary>
+            Exception class, related with opening/closing quotes.
+            </summary>
+        </member>
+        <member name="M:CalculateLibrary.QuotesCountException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CalculateLibrary.QuotesCountException"/> class.
+            </summary>
+            <param name="message">String with message for user.</param>
+        </member>
+        <member name="T:CalculateLibrary.Variables">
+            <summary>
+            Class for working with variables.
+            </summary>
+        </member>
+        <member name="M:CalculateLibrary.Variables.#ctor(System.Char,System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CalculateLibrary.Variables"/> class.
+            </summary>
+            <param name="variableName">Variable name.</param>
+            <param name="variableValue">Variable value.</param>
+        </member>
+        <member name="P:CalculateLibrary.Variables.VariableCount">
+            <summary>
+            Gets or sets of variable count.
+            </summary>
+        </member>
+        <member name="P:CalculateLibrary.Variables.VariableName">
+            <summary>
+            Gets or sets of variable name.
+            </summary>
+        </member>
+        <member name="P:CalculateLibrary.Variables.VariableValue">
+            <summary>
+            Gets or sets of variable value.
+            </summary>
+        </member>
+        <member name="T:CalculateLibrary.SimpleExpression">
+            <summary>
+            Class for working with simple expressions.
+            </summary>
+            <remarks>Simple expression is an expression of the form "operand, operator, operand".</remarks>
+        </member>
+        <member name="F:CalculateLibrary.SimpleExpression.operation">
+            <summary>
+            Dictionary, which contains operation mark and method, which match this mark.
+            </summary>
+        </member>
+        <member name="M:CalculateLibrary.SimpleExpression.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CalculateLibrary.SimpleExpression"/> class.
+            </summary>
+            <param name="operatr">Operator mark.</param>
+            <param name="secondOperand">Second operand.</param>
+            <param name="firstOperand">First operand.</param>
+        </member>
+        <member name="M:CalculateLibrary.SimpleExpression.DoMathOperation">
+            <summary>
+            Does the corresponding operation.
+            </summary>
+            <returns>Returns the result of corresponding math function.</returns>
+        </member>
+        <member name="M:CalculateLibrary.SimpleExpression.Sum">
+            <summary>
+            Sum operation.
+            </summary>
+            <returns>Returns result of sum.</returns>
+        </member>
+        <member name="M:CalculateLibrary.SimpleExpression.Substract">
+            <summary>
+            Substraction operation.
+            </summary>
+            <returns>Returns result of substraction.</returns>
+        </member>
+        <member name="M:CalculateLibrary.SimpleExpression.Multiply">
+            <summary>
+            Multiplication operation.
+            </summary>
+            <returns>Returns result of multiplication.</returns>
+        </member>
+        <member name="M:CalculateLibrary.SimpleExpression.Divide">
+            <summary>
+            Divide operation.
+            </summary>
+            <returns>Returns result of dividing.</returns>
+        </member>
+        <member name="P:CalculateLibrary.SimpleExpression.FirstOperand">
+            <summary>
+            Gets or sets the first operand of expression (numerator of dividing).
+            </summary>
+        </member>
+        <member name="P:CalculateLibrary.SimpleExpression.SecondOperand">
+            <summary>
+            Gets or sets the second operand of expression (denominator of dividing).
+            </summary>
+        </member>
+        <member name="P:CalculateLibrary.SimpleExpression.Operator">
+            <summary>
+            Gets or sets the operator +-*/.
+            </summary>
+        </member>
+        <member name="T:CalculateLibrary.SimpleExpression.Operations">
+            <summary>
+            Delegate for methods of calculate expression.
+            </summary>
+            <returns>Returns result of corresponding operation.</returns>      
+        </member>
+        <member name="T:CalculateLibrary.VariablesException">
+            <summary>
+            Exception class, related with variables.
+            </summary>
+        </member>
+        <member name="M:CalculateLibrary.VariablesException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CalculateLibrary.VariablesException"/> class.
+            </summary>
+            <param name="message">String with message for user.</param>
+        </member>
+        <member name="T:CalculateLibrary.CalculateException">
+            <summary>
+            Exception class, related with incorrect input expression.
+            </summary>
+        </member>
+        <member name="M:CalculateLibrary.CalculateException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CalculateLibrary.CalculateException"/> class.
+            </summary>
+            <param name="message">String with message for user.</param>
+        </member>
+    </members>
+</doc>

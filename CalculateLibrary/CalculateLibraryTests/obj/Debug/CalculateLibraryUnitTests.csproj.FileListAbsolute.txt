@@ -1,0 +1,9 @@
+C:\Users\-Mike-\Documents\CalculateProject\CalculateLibrary\CalculateLibrary\CalculateLibraryTests\bin\Debug\CalculateLibraryTests.XML
+C:\Users\-Mike-\Documents\CalculateProject\CalculateLibrary\CalculateLibrary\CalculateLibraryTests\bin\Debug\CalculateLibraryTests.dll
+C:\Users\-Mike-\Documents\CalculateProject\CalculateLibrary\CalculateLibrary\CalculateLibraryTests\bin\Debug\CalculateLibraryTests.pdb
+C:\Users\-Mike-\Documents\CalculateProject\CalculateLibrary\CalculateLibrary\CalculateLibraryTests\bin\Debug\CalculateLibrary.dll
+C:\Users\-Mike-\Documents\CalculateProject\CalculateLibrary\CalculateLibrary\CalculateLibraryTests\bin\Debug\CalculateLibrary.pdb
+C:\Users\-Mike-\Documents\CalculateProject\CalculateLibrary\CalculateLibrary\CalculateLibraryTests\bin\Debug\CalculateLibrary.xml
+C:\Users\-Mike-\Documents\CalculateProject\CalculateLibrary\CalculateLibrary\CalculateLibraryTests\obj\Debug\CalculateLibraryUnitTests.csprojResolveAssemblyReference.cache
+C:\Users\-Mike-\Documents\CalculateProject\CalculateLibrary\CalculateLibrary\CalculateLibraryTests\obj\Debug\CalculateLibraryTests.dll
+C:\Users\-Mike-\Documents\CalculateProject\CalculateLibrary\CalculateLibrary\CalculateLibraryTests\obj\Debug\CalculateLibraryTests.pdb

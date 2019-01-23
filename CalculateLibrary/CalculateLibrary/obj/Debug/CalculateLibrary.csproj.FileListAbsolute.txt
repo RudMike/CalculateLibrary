@@ -1,0 +1,5 @@
+C:\Users\-Mike-\Documents\CalculateProject\CalculateLibrary\CalculateLibrary\CalculateLibrary\bin\Debug\CalculateLibrary.dll
+C:\Users\-Mike-\Documents\CalculateProject\CalculateLibrary\CalculateLibrary\CalculateLibrary\bin\Debug\CalculateLibrary.pdb
+C:\Users\-Mike-\Documents\CalculateProject\CalculateLibrary\CalculateLibrary\CalculateLibrary\obj\Debug\CalculateLibrary.dll
+C:\Users\-Mike-\Documents\CalculateProject\CalculateLibrary\CalculateLibrary\CalculateLibrary\obj\Debug\CalculateLibrary.pdb
+C:\Users\-Mike-\Documents\CalculateProject\CalculateLibrary\CalculateLibrary\CalculateLibrary\bin\Debug\CalculateLibrary.XML

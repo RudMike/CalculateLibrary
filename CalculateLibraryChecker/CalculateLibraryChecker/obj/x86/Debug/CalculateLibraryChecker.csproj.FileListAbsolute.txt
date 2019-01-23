@@ -1,0 +1,5 @@
+C:\Users\-Mike-\Documents\CalculateProject\CalculateLibrary\CalculateLibraryChecker\CalculateLibraryChecker\bin\Debug\CalculateLibraryChecker.exe
+C:\Users\-Mike-\Documents\CalculateProject\CalculateLibrary\CalculateLibraryChecker\CalculateLibraryChecker\bin\Debug\CalculateLibraryChecker.pdb
+C:\Users\-Mike-\Documents\CalculateProject\CalculateLibrary\CalculateLibraryChecker\CalculateLibraryChecker\obj\x86\Debug\CalculateLibraryChecker.exe
+C:\Users\-Mike-\Documents\CalculateProject\CalculateLibrary\CalculateLibraryChecker\CalculateLibraryChecker\obj\x86\Debug\CalculateLibraryChecker.pdb
+C:\Users\-Mike-\Documents\CalculateProject\CalculateLibrary\CalculateLibraryChecker\CalculateLibraryChecker\obj\x86\Debug\CalculateLibraryChecker.csprojResolveAssemblyReference.cache
