@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CalculateLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:CalculateLibrary.ICalculate">
+            <summary>
+            Интерфейс библиотеки
+            </summary>
+        </member>
+        <member name="M:CalculateLibrary.ICalculate.CalculateExp(System.String,System.Collections.Generic.Dictionary{System.Char,System.Double})">
+            <summary>
+            Вычисляет строку, содержащую математическое выражение с переменными
+            </summary>
+            <param name="sExpression">Входное выражение</param>
+            <param name="variables">Словарь, содержащий переменные и их значения</param>
+            <returns>Возвращает результат вычисления выражения</returns>
+        </member>
+        <member name="M:CalculateLibrary.ICalculate.CalculateExp(System.String)">
+            <summary>
+            Вычисляет строку, содержащую математическое выражение без переменных
+            </summary>
+            <param name="sExpression">Входное выражение</param>
+            <returns>Возвращает результат вычисления выражения</returns>
+        </member>
+        <member name="T:CalculateLibrary.CalculateException">
+            <summary>
+            Класс исключений, связанный с некорректным входным выражением
+            </summary>
+        </member>
+        <member name="M:CalculateLibrary.CalculateException.#ctor(System.String)">
+            <summary>
+            Исключение, возникающее при неверном входной выражении
+            </summary>
+            <param name="message">Строка с сообщением пользователю</param>
+        </member>
+        <member name="T:CalculateLibrary.QuotesCountException">
+            <summary>
+            Класс исключений, связанный с открывающимися/закрывающимися скобками
+            </summary>
+        </member>
+        <member name="M:CalculateLibrary.QuotesCountException.#ctor(System.String)">
+            <summary>
+            Исключение, возникающее при некорректно расставленных скобках
+            </summary>
+            <param name="message">Строка с сообщением пользователю</param>
+        </member>
+        <member name="T:CalculateLibrary.VariablesException">
+            <summary>
+            Класс исключений, связанный с переменными
+            </summary>
+        </member>
+        <member name="M:CalculateLibrary.VariablesException.#ctor(System.String)">
+            <summary>
+            Исключение, возникающее в случае передачи некорректных переменных
+            </summary>
+            <param name="message">Строка с сообщением пользователю</param>
+        </member>
+        <member name="M:CalculateLibrary.SimpleExpression.#ctor(System.String,System.Object,System.Object)">
+             <summary>
+             Конструктор класса
+             </summary>
+            <param name="sOperator">Знак операции</param>
+             <param name="dSecondOperand">Второй операнд</param>
+             <param name="dFirstOperand">Первый операнд</param>
+        </member>
+        <member name="M:CalculateLibrary.SimpleExpression.DoOperation">
+            <summary>
+            Выполнение соответствующей операции
+            </summary>
+            <returns>Возвращает соответствующую функцию</returns>
+        </member>
+        <member name="M:CalculateLibrary.SimpleExpression.Sum">
+            <summary>
+            Операциия сложения
+            </summary>
+            <returns>Возвращает результат сложения</returns>
+        </member>
+        <member name="M:CalculateLibrary.SimpleExpression.Substract">
+            <summary>
+            Операциия вычитания
+            </summary>
+            <returns>Возвращает результат вычитания</returns>
+        </member>
+        <member name="M:CalculateLibrary.SimpleExpression.Multiply">
+            <summary>
+            Операциия умножения
+            </summary>
+            <returns>Возвращает результат умножения</returns>
+        </member>
+        <member name="M:CalculateLibrary.SimpleExpression.Divide">
+            <summary>
+            Операциия деления
+            </summary>
+            <returns>Возвращает результат деления</returns>
+        </member>
+        <member name="T:CalculateLibrary.Variables">
+            <summary>
+            Класс, содержащий информацию о переменной
+            </summary>
+        </member>
+        <member name="M:CalculateLibrary.Variables.#ctor(System.Char,System.Double)">
+            <summary>
+            Конструктор класса
+            </summary>
+            <param name="cVarName">Имя переменной</param>
+            <param name="dVarValue">Значение переменной</param>
+        </member>
+        <member name="T:CalculateLibrary.Calculate">
+            <summary>
+            Основной класс программы
+            </summary>
+        </member>
+        <member name="M:CalculateLibrary.Calculate.CalculateExp(System.String)">
+            <summary>
+            Вычисляет строку, содержащую математическое выражение без переменных
+            </summary>
+            <param name="sExpression">Входное выражение </param>
+            <exception cref="T:CalculateLibrary.VariablesException">Исключение VariablesException при передаче в метод строки с переменными </exception>
+            <exception cref="T:CalculateLibrary.QuotesCountException">Исключение QuotesCountException при неверном количестве открывающихся и закрывающихся скобок </exception>
+            <exception cref="T:System.DivideByZeroException">Исключение DivideByZeroException при попытке деления на 0 </exception>
+            <exception cref="T:CalculateLibrary.CalculateException">Исключение CalculateException при некорректном входном выражении </exception>
+            <returns>Возвращает результат вычисления выражения</returns>
+        </member>
+        <member name="M:CalculateLibrary.Calculate.CalculateExp(System.String,System.Collections.Generic.Dictionary{System.Char,System.Double})">
+            <summary>
+            Вычисляет строку, содержащую математическое выражение с переменными
+            </summary>
+            <param name="sExpression">Входное выражение</param>
+            <param name="variables">Словарь, содержащий переменные и их значения</param>
+            <exception cref="T:CalculateLibrary.QuotesCountException">Исключение QuotesCountException при неверном количестве открывающихся и закрывающихся скобок </exception>
+            <exception cref="T:System.DivideByZeroException">Исключение DivideByZeroException при попытке деления на 0 </exception>
+            <exception cref="T:CalculateLibrary.CalculateException">Исключение CalculateException при некорректном входном выражении </exception>
+            <returns>Возвращает результат вычисления выражения</returns>
+        </member>
+        <member name="M:CalculateLibrary.Calculate.Calculating(System.String)">
+            <summary>
+            Вычисляет выражение
+            </summary>
+            <param name="sExpression">Входное выражение</param>
+            <returns>Результат</returns>
+        </member>
+        <member name="M:CalculateLibrary.Calculate.DoExpressionCorrect(System.String)">
+            <summary>
+            Метод для проверки исходной строки на корректность и попытка сделать ее таковой
+            (удаляет символы табуляции, перевода строки, расставляет знаки "*" у скобок и переменных, проверяет корректность скобок)
+            </summary>
+            <param name="sExpression">Выражением, приводимое к корректному виду</param>
+            <returns>Возвращает приведенное к корректному виду исходное выражение</returns>
+        </member>
+        <member name="M:CalculateLibrary.Calculate.isCorrectQuotes(System.String)">
+            <summary>
+            Метод для проверки правильности расстановки скобок
+            </summary>
+            <param name="sExpression">Cтрока для проверки</param>
+            <returns>Возвращает true в случае правильной расстановки скобок, иначе false</returns>
+        </member>
+        <member name="M:CalculateLibrary.Calculate.isVariable(System.Char)">
+            <summary>
+            Метод для определения, является ли символ буквой
+            </summary>
+            <param name="cSymbol">Проверяемый символ</param>
+            <returns>true - если символ является буквой, false - если не является</returns>
+        </member>
+        <member name="M:CalculateLibrary.Calculate.isNumber(System.Char)">
+            <summary>
+            Метод для определения, является ли символ цифрой
+            </summary>
+            <param name="cSymbol">Проверяемый символ</param>
+            <returns>true - если символ является цифрой, false - если не является</returns>
+        </member>
+        <member name="M:CalculateLibrary.Calculate.isOperator(System.Char)">
+            <summary>
+            Метод для определения, является ли символ оператором (+-*/)
+            </summary>
+            <param name="cSymbol">Проверяемый символ</param>
+            <returns>true - если символ является оператором, false - если не является</returns>
+        </member>
+        <member name="M:CalculateLibrary.Calculate.isLowPriorOperator(System.Char)">
+            <summary>
+            Метод для определения, является ли символ оператором низкого приоритета "+-")
+            </summary>
+            <param name="operatr">Проверяемый оператор</param>
+            <returns>Возвращает true - если оператор низкого приоритета, false - если высокого</returns>
+        </member>
+        <member name="M:CalculateLibrary.Calculate.getPriorOperator(System.Object)">
+            <summary>
+            Метод для получения приоритета оператора
+            </summary>
+            <param name="operatr">Проверяемый оператор</param>
+            <returns>Возвращает приритет оператора: 0 если оператор "()", 1 если оператор "+-", 2 если оператор "*/", -1 в случае неизвестного оператор</returns>
+        </member>
+    </members>
+</doc>

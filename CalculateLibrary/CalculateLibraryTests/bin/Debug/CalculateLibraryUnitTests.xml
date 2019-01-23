@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CalculateLibraryUnitTests</name>
+    </assembly>
+    <members>
+        <member name="T:CalculateLibraryUnitTests.CalculateLibraryUnitTests">
+            <summary>
+            Test class for methods of dll-library CalculateLibrary.
+            </summary>
+        </member>
+        <member name="M:CalculateLibraryUnitTests.CalculateLibraryUnitTests.CalculateExpressionWithoutVariables_CorrectnessOfCalculations_Success">
+            <summary>
+            Testing on calculations correctness of CalculateExpression method,
+            which doesn't receive variables.
+            </summary>
+        </member>
+        <member name="M:CalculateLibraryUnitTests.CalculateLibraryUnitTests.CalculateExpressionWithVariables_CorrectnessOfCalculations_Success">
+            <summary>
+            Testing on calculations correctness of CalculateExpression method
+            with some variables.
+            </summary>
+        </member>
+        <member name="M:CalculateLibraryUnitTests.CalculateLibraryUnitTests.DoExpressionFormatCorrect_ExpressionWithSpacesAndTabulation_Success">
+            <summary>
+            Testing situation when input expression spaces and tabulation symbol.
+            </summary>
+            <example>2 +  3\n+   4 is equal 2+3+4</example>
+        </member>
+        <member name="M:CalculateLibraryUnitTests.CalculateLibraryUnitTests.DoExpressionFormatCorrect_ExpressionWithCommas_Success">
+            <summary>
+            Testing situation when using commas instead points in numbers.
+            </summary>
+            <example>2 * 2,5</example>
+        </member>
+        <member name="M:CalculateLibraryUnitTests.CalculateLibraryUnitTests.DoExpressionFormatCorrect_NoOperatorNearlyLowPriorityOperand_Success">
+            <summary>
+            Testing situation when operands "+-" doesn't have number nearly.
+            </summary>
+            <example>+2+3 is equal 0+2+3-0</example>
+        </member>
+        <member name="M:CalculateLibraryUnitTests.CalculateLibraryUnitTests.DoExpressionFormatCorrect_NoMultiplyNearlyVariables_Success">
+            <summary>
+            Testing situation when between variables doesn't have "*".
+            </summary>
+            <example>abc is equal a*b*c</example>
+        </member>
+        <member name="M:CalculateLibraryUnitTests.CalculateLibraryUnitTests.DoExpressionFormatCorrect_NoMultiplyBetweenVariableAndOperand_Success">
+            <summary>
+            Testing situation when between variable and number doesn't have "*".
+            </summary>
+            <example>2b3 is equal 2*b*3</example>
+        </member>
+        <member name="M:CalculateLibraryUnitTests.CalculateLibraryUnitTests.DoExpressionFormatCorrect_NoMultiplyNearlyQuotes_Success">
+            <summary>
+            Testing situation when between quote and number/variable doesn't have "*".
+            </summary>
+            <example>2(a+1)3 is equal 2*(a+1)*3</example>
+        </member>
+        <member name="M:CalculateLibraryUnitTests.CalculateLibraryUnitTests.CalculateExpressionWithoutVariables_EmptyExpression_Fail">
+            <summary>
+            Testing situation when input expression for overloaded method without variables is empty.
+            </summary>
+            <remarks>Must be exception.</remarks> 
+        </member>
+        <member name="M:CalculateLibraryUnitTests.CalculateLibraryUnitTests.CalculateExpressionWithoutVariables_UsingVariables_Fail">
+            <summary>
+            Testing situation when input expression has variables but calling wrong overloaded method.
+            </summary>
+            <remarks>Must be exception.</remarks>
+        </member>
+        <member name="M:CalculateLibraryUnitTests.CalculateLibraryUnitTests.CalculateExpressionWithVariables_EmptyExpression_Fail">
+            <summary>
+            Testing situation when input expression for overloaded method with variables is empty.
+            </summary>
+            <remarks>Must be exception.</remarks> 
+        </member>
+        <member name="M:CalculateLibraryUnitTests.CalculateLibraryUnitTests.CalculateExpressionWithVariables_NotFullVariablesDeclaration_Fail">
+            <summary>
+            Testing situation when in method sending not all values of using variables.
+            </summary>
+            <remarks>Must be exception.</remarks> 
+        </member>
+        <member name="M:CalculateLibraryUnitTests.CalculateLibraryUnitTests.Calculating_DividedByZero_Fail">
+            <summary>
+            Testing situation when in calculating arises dividing by zero.
+            </summary>
+            <remarks>Must be exception.</remarks>
+        </member>
+        <member name="M:CalculateLibraryUnitTests.CalculateLibraryUnitTests.DoExpressionFormatCorrect_IncorrectQuotes_Fail">
+            <summary>
+            Testing situation when input expression has incorrect quotes position and count.
+            </summary>
+            <example>(2+3)) or ((2+3) or )2+3( etc.</example>
+            <remarks>Must be exception.</remarks>
+        </member>
+        <member name="M:CalculateLibraryUnitTests.CalculateLibraryUnitTests.DoExpressionFormatCorrect_IncorrectBorderOperators_Fail">
+            <summary>
+            Testing situation when input expression starting or ending with wrong symbols.
+            </summary>
+            <example>* 2 + 3 /</example>
+            <remarks>Must be exception.</remarks>
+        </member>
+        <member name="M:CalculateLibraryUnitTests.CalculateLibraryUnitTests.DoExpressionFormatCorrect_IncorrectOperatorsNearlyQuote_Fail">
+            <summary>
+            Testing situation when in input expression nearly quote symbols '*' and '/' on wrong position. 
+            </summary>
+            <example>(*2+3) or (2+3/)</example>
+            <remarks>Must be exception.</remarks>
+        </member>
+    </members>
+</doc>
