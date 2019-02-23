@@ -1,0 +1,3 @@
+<StyleCopViolations>
+  <Violation LineNumber="1" Source="C:\Users\-Mike-\Documents\CalculateProject\CalculateLibrary\CalculateLibrary\CalculateLibrary\Calculate .cs" RuleNamespace="StyleCop.CSharp.DocumentationRules" Rule="FileHeaderFileNameDocumentationMustMatchFileName" RuleId="SA1638">The file attribute in the file header's copyright tag must contain the name of the file.</Violation>
+</StyleCopViolations>
